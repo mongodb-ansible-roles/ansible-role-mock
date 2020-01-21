@@ -1,0 +1,11 @@
+---
+- name: Install mock package
+  dnf:
+    name: mock
+    state: present
+
+- name: Add user to mock group
+  user:
+    append: true
+    groups: mock
+    name: "{{ mock_user }}"
