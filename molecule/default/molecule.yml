@@ -6,13 +6,17 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: instance
-    image: debian:9
+  - name: rhel8
+    image: registry.redhat.io/ubi8
+    privileged: true
+  - name: rhel7
+    image: registry.redhat.io/ubi7
+    privileged: true
 provisioner:
   name: ansible
   lint:
     name: ansible-lint
 verifier:
-  name: inspec
+  name: testinfra
   lint:
-    name: rubocop
+    name: flake8
