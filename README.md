@@ -3,7 +3,9 @@ Ansible role for mock
 
 Installs the mock package
 
-[![CircleCI](https://img.shields.io/circleci/build/github/mongodb-ansible-roles/ansible-role-mock/master?style=flat-square)](https://circleci.com/gh/mongodb-ansible-roles/ansible-role-mock)
+[![GitHub Actions](https://github.com/mongodb-ansible-roles/ansible-role-mock/workflows/Molecule%20Test/badge.svg)](https://github.com/mongodb-ansible-roles/ansible-role-mock/actions?query=workflow%3A%22Molecule+Test%22)
+[![GitHub Actions](https://github.com/mongodb-ansible-roles/ansible-role-mock/workflows/Release/badge.svg)](https://github.com/mongodb-ansible-roles/ansible-role-mock/actions?query=workflow%3A%22Release%22)
+
 
 Requirements
 ------------
@@ -32,19 +34,6 @@ Example Playbook
       vars:
         mock_user: mci-exec
 ```
-
-Development
------------
-
-Testing this role locally requires the CircleCI [Local CLI](https://circleci.com/docs/2.0/local-cli/).
-
-To install the CLI for macOS and Linux, invoke the following command:
-
-    $ curl -fLSs https://circle.ci/cli | DESTDIR=/usr/local/bin bash
-
-After installing the CLI, invoke the following command to run the Molecule tests:
-
-    $ make test
 
 License
 -------
