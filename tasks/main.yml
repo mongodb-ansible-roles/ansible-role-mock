@@ -1,6 +1,6 @@
 ---
 - name: Install mock package
-  dnf:
+  package:
     name: mock
     state: present
 
