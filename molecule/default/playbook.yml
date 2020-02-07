@@ -4,3 +4,5 @@
   hosts: all
   roles:
     - role: ansible-role-mock
+      vars:
+        mock_user: test

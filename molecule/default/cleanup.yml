@@ -1,0 +1,9 @@
+---
+- gather_facts: false
+  name: Unsubscribe container
+  hosts: all
+  tasks:
+    - name: Unsubscribe container
+      command: subscription-manager unregister
+      ignore_unreachable: true
+      ignore_errors: true
